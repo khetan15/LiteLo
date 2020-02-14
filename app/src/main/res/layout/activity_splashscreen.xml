@@ -8,13 +8,14 @@
     android:background="@color/forceful_orange">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="580dp"
+        android:fontFamily="monospace"
         android:text="Chat+"
         android:textAlignment="center"
         android:textColor="@color/harvester"
-        android:fontFamily="monospace"
         android:textSize="60dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +31,7 @@
         app:lottie_fileName="emo.json"
         app:lottie_loop="false"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="95dp" />
+        tools:layout_editor_absoluteY="-113dp" />
 
     <ProgressBar
         android:layout_width="60dp"
@@ -41,5 +42,23 @@
         app:layout_constraintStart_toStartOf="parent"
         android:outlineSpotShadowColor="@color/colorPrimaryDark"
         android:id="@+id/pbar"/>
+
+    <TextView
+        android:id="@+id/my_quotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lottieAnimationView"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/harvester"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/lottieAnimationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lottieAnimationView"
+        app:layout_constraintVertical_bias="0.387" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
