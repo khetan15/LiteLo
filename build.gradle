@@ -5,6 +5,7 @@ buildscript {
         mavenCentral()
         google()
         jcenter()
+        //url "https://maven.google.com"
         
     }
     dependencies {
