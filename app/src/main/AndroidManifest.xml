@@ -13,11 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+
         <activity android:name=".Therapist"></activity>
-        <activity android:name=".PostActivity" />
         <activity android:name=".EnterPassword" />
         <activity android:name=".CreatePasswordActivity" />
-        <activity android:name=".FirstPage" />
+
         <activity android:name=".Splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
