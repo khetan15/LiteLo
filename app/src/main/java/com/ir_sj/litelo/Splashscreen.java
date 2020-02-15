@@ -81,14 +81,15 @@ public class Splashscreen extends AppCompatActivity {
                 else
                 {
                     Intent intent=new Intent(getApplicationContext(),EnterPassword.class);
+                    startActivity(intent);
                     finish();
                 }
 
-                if(FirebaseAuth.getInstance().getCurrentUser() ==  null)
+                /*if(FirebaseAuth.getInstance().getCurrentUser() ==  null)
                     startActivity(new Intent(Splashscreen.this, FirstPage.class));
                 else
                     startActivity(new Intent(Splashscreen.this, MainActivity.class));
-                finish();
+                finish();*/
             }
         },4000);
     }
